@@ -1,0 +1,32 @@
+1) UI based enhancements
+2) Evaluation
+    a) Ragas
+        faithfulness, answer_relevancy, context_precision, context_recall metrics
+    b) Langsmith -> uses traces
+    both are libraries to evaluate for building industry level rag applications
+3) Indexing part
+    a) Document Ingestion: the transcript is auto generated, if it is in other language then translate it to english and other preprocessing
+    b) Text Splitting: Semantic chunker can be used
+    c) Vector store: FAISS is basic, we can use pinecone type cloud solution for organizations
+4) Retrieval
+    a) Pre-Retrieval
+        - Query rewriting using llm
+        - Multi query generation
+        - Domain aware routing -> selecting retriever based on query type
+    b) During Retrieval
+        - MMR
+        - Hybrid Retrieval -> mix of semantic search and keyword search
+        - Reranking results using llm
+    c) Post-Retrieval
+        - Contextual compression
+5) Augmentation
+    a) Prompt Templating -> proper explanation of Prompt
+    b) Answer grounding -> explicitly telling llm to give contextual answers, dont create facts or hallucinate
+    c) Context window optimization -> trimming context to avoid crossing of contextual limit
+6) Generation
+    a) Answer with citation -> showing from which part of context response is generated
+    b) Guard railing
+7) System Design
+    a) Multimodal RAG system -> this is only of Text
+    b) Agentic RAG -> acts as agent instead of chatbot, ex: surfing through web and combining the context if required
+    c) Memory based RAG system -> so that it could become a personalised one with chat history

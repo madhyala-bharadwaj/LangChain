@@ -1,0 +1,53 @@
+# Open AI API tokens
+
+platform openai .com -> settings -> api keys https://platform.openai.com/settings/organization/api-keys
+in .env name should be 
+OPENAI_API_KEY = "your_key"
+
+to view models
+platform openai .com -> models 
+https://platform.openai.com/docs/models
+
+
+
+# Claude API
+
+console anthropic .com -> settings -> api keys https://console.anthropic.com/settings/keys
+in .env name should be 
+ANTHROPIC_API_KEY = "your_key"
+
+to view models
+console anthropic .com -> settings -> documentation -> developer guide -> models overview 
+https://docs.anthropic.com/en/docs/about-claude/models/overview
+
+
+# Google Gemini API
+
+https://ai.google.dev/aistudio -> get your API key -> Create API key
+https://aistudio.google.com/app/apikey
+
+in .env name should be 
+GOOGLE_API_KEY = "your_key"
+
+to view models
+https://ai.google.dev/gemini-api/docs/models
+
+
+# Open Source Models using Huggingface API
+
+Huggingface -> profile -> access token -> create token with read permission
+
+in .env name should be 
+HUGGINGFACEHUB_ACCESS_TOKEN = "your_key"
+
+to view models
+https://huggingface.co/models
+
+
+# OpenAI Embedding models
+to view models
+https://platform.openai.com/docs/guides/embeddings
+
+in .env name should be 
+OPENAI_API_KEY = "your_key"
+
